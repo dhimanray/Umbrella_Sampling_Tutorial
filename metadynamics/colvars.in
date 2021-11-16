@@ -1,0 +1,28 @@
+colvarsTrajFrequency      50
+
+
+colvar {
+   name dist
+   
+   width 0.2			#width of the collective variable
+   
+   #The range between which the simulation is going to be performed 
+   lowerboundary    30.0        
+   upperboundary    60.0
+
+   #define the collective variable (Here, it is the distance between two sets of atoms)
+   distance {
+     group1 { atomNumbersRange 6411-6655 }
+     group2 { atomNumbersRange 1-6410 }
+        }
+ 
+}
+
+#perform metadynamics
+metadynamics {
+      colvars dist
+      hillWeight 0.1
+      hillWidth 3.0
+}
+
+
