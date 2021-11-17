@@ -6,3 +6,5 @@ The packages can be obtained from:
 NAMD: https://www.ks.uiuc.edu/Development/Download/download.cgi?PackageName=NAMD
 
 WHAM: http://membrane.urmc.rochester.edu/?page_id=126
+
+Please check the PDF file for the tutorial instructions.
